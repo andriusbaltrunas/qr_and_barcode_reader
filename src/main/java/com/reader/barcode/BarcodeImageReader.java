@@ -1,3 +1,4 @@
+package com.reader.barcode;
 
 /**
  * Created by andriusbaltrunas on 3/23/2018.

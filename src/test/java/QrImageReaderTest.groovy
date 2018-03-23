@@ -1,3 +1,4 @@
+import com.reader.qr.impl.QrImageReaderImpl
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
@@ -7,11 +8,11 @@ import org.junit.Test
  */
 public class QrImageReaderTest {
 
-    private QrImageReader orImageReader;
+    private QrImageReaderImpl orImageReader;
 
     @Before
     public void beforeMethod(){
-        orImageReader = new QrImageReader();
+        orImageReader = new QrImageReaderImpl();
     }
 
 

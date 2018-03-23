@@ -1,3 +1,4 @@
+import com.reader.barcode.BarcodeImageReader
 import org.junit.Assert
 import org.junit.Before
 import org.junit.Test
