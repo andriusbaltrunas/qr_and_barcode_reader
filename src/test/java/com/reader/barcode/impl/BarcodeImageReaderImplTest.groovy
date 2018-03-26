@@ -9,6 +9,7 @@ import org.junit.Test
  * Created by andriusbaltrunas on 3/26/2018.
  */
 class BarcodeImageReaderImplTest {
+    private final List<String> barcodeNames = Arrays.asList("4007249571847", "4007249492326", "4007249808004", "4007249808035", "4007249808059", "4007249894342");
 
     private BarcodeImageReader barcodeImageReader;
 
@@ -21,8 +22,9 @@ class BarcodeImageReaderImplTest {
 
     @Test
     public void testReadBarcodeFromImage() {
-        String shouldBe = "4007249571847";
-        String result = barcodeImageReader.readBarcodeFromImage("barcode.gif");
-        Assert.assertEquals(shouldBe, result);
+       for(String name: barcodeNames) {
+           String result = barcodeImageReader.readBarcodeFromImage("barcodes/"+name+".gif");
+           Assert.assertEquals(name, result);
+       }
     }
 }
