@@ -1,14 +1,11 @@
 package com.reader.barcode;
 
+import com.reader.exception.ReadBardCodeException;
+
 /**
- * Created by andriusbaltrunas on 3/23/2018.
+ * Created by andriusbaltrunas on 3/26/2018.
  */
-public class BarcodeImageReader {
+public interface BarcodeImageReader {
 
-    public String readBarcode(String fileName){
-        String result = null;
-
-        return result;
-    }
-
+    String readBarcodeFromImage(String imagePath) throws ReadBardCodeException;
 }
